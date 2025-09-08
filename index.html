@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternativa Assistência - Equipamentos Médicos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #1a1a2e;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 15px;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .logo-container {
+            margin: 0 auto 30px;
+            text-align: center;
+            max-width: 300px;
+        }
+        
+        .logo-img {
+            width: 100%;
+            max-width: 280px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff5b00;
+            color: white;
+            text-decoration: none;
+            padding: 16px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+        
+        .btn:hover {
+            background-color: #e05200;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .contact-info {
+            margin-top: 25px;
+            padding: 20px 15px;
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-info p {
+            margin: 12px 0;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 380px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            .btn {
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .container > * {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .logo-container { animation-delay: 0.2s; }
+        h1 { animation-delay: 0.3s; }
+        .buttons-container { animation-delay: 0.4s; }
+        .contact-info { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://i.ibb.co/s93JBdxT/C-pia-de-adesivo-pdf-1.png" alt="Alternativa Assistência" class="logo-img">
+        </div>
+        
+        <h1>Entre em Contato</h1>
+        
+        <div class="buttons-container">
+            <a href="https://wa.me/5585982066196" class="btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            
+            <a href="mailto:contatoaaem@alternativaassistencia.com" class="btn">
+                <i class="far fa-envelope"></i> E-mail
+            </a>
+        </div>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> 85 98206-6196</p>
+            <p><i class="far fa-envelope"></i> contatoaaem@alternativaassistencia.com</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Alternativa Assistência - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
